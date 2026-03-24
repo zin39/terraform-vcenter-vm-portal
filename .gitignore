@@ -1,0 +1,47 @@
+# Rust
+backend/target/
+**/*.rs.bk
+
+# Environment files
+backend/.env
+deploy/.env.production
+.env
+.env.*
+!.env.example
+
+# Sanitization map (private reference)
+SANITIZATION_MAP.md
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Terraform
+**/*.tfstate
+**/*.tfstate.backup
+**/.terraform/
+*.tfvars
+!*.tfvars.example
+terraform-workspaces/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.vim
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Deployment artifacts
+deploy_package/
+deploy/package/
+*.tar.gz
+
+# Database
+*.sql.backup

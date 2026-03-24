@@ -1,0 +1,26 @@
+[Unit]
+Description=VM Provisioning Portal Backend
+After=network.target postgresql.service
+Requires=postgresql.service
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/vm-portal/backend
+ExecStart=/var/www/vm-portal/backend/approval_portal
+Restart=always
+RestartSec=5
+Environment=RUST_LOG=info
+
+# Load environment from file
+EnvironmentFile=/var/www/vm-portal/backend/.env
+
+# Security settings
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/www/vm-portal/backend/terraform-workspaces
+
+[Install]
+WantedBy=multi-user.target
