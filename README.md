@@ -248,15 +248,23 @@ See the `deploy/` directory for production deployment configurations:
 
 ## Screenshots
 
-<!-- TODO: Add screenshots -->
-<!--
-![Dashboard](docs/screenshots/dashboard.png)
-![New VM Request](docs/screenshots/new-request.png)
-![Provisioning Progress](docs/screenshots/provisioning.png)
-![Provisioned VMs](docs/screenshots/provisioned-vms.png)
--->
+### Login
+![Login](screenshot/01-login.png)
 
-*Screenshots coming soon*
+### Dashboard
+![Dashboard](screenshot/02-dashboard.png)
+
+### VM Requests
+![VM Requests](screenshot/03-vm-requests.png)
+
+### Provisioned VMs
+![Provisioned VMs](screenshot/04-provisioned-vms.png)
+
+### Network Management
+![Network Management](screenshot/05-network-management.png)
+
+### User Management
+![User Management](screenshot/06-user-management.png)
 
 ---
 
